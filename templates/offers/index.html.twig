@@ -1,0 +1,706 @@
+{#{% extends 'base.html.twig' %}#}
+
+{#{% block title %}Hello OffreController!{% endblock %}#}
+
+{#{% block body %}#}
+
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="zxx">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="robots" content="index,follow">
+
+    <title>Jobvivo - Job Portal Template</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+
+    <!-- Icons -->
+    <link href="assets/plugins/icons/css/icons.css" rel="stylesheet">
+
+    <!-- Animate -->
+    <link href="assets/plugins/animate/animate.css" rel="stylesheet">
+
+    <!-- Bootsnav -->
+    <link href="assets/plugins/bootstrap/css/bootsnav.css" rel="stylesheet">
+
+    <!-- Custom style -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/responsiveness.css" rel="stylesheet">
+
+    <!-- Custom Color -->
+    <link href="assets/css/skin/default.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body class="blue-skin">
+
+<!-- ======================= Start Navigation ===================== -->
+<nav class="navbar navbar-default navbar-mobile navbar-fixed light bootsnav">
+    <div class="container">
+
+        <!-- Start Logo Header Navigation -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                <i class="fa fa-bars"></i>
+            </button>
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/img/logo.png" class="logo logo-display" alt="">
+                <img src="assets/img/logo.png" class="logo logo-scrolled" alt="">
+            </a>
+
+        </div>
+        <!-- End Logo Header Navigation -->
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="navbar-menu">
+
+            <ul class="nav navbar-nav navbar-left" data-in="fadeInDown" data-out="fadeOutUp">
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Home</a>
+                    <ul class="dropdown-menu animated fadeOutUp">
+                        <li><a href="index.html">Home 1</a></li>
+                        <li><a href="home-2.html">Home 2</a></li>
+                        <li><a href="home-3.html">Home 3</a></li>
+                        <li><a href="home-4.html">Home 4</a></li><li><a href="home-5.html">Home 5</a></li><li><a href="home-6.html">Home 6</a></li><li><a href="home-7.html">Home 7</a></li><li><a href="home-8.html">Home 8</a></li>
+                        <li><a href="freelancer.html">Freelancer</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Employer</a>
+                    <ul class="dropdown-menu animated fadeOutUp">
+                        <li><a href="create-company.html">Create Company</a></li>
+                        <li><a href="manage-resume.html">Manage Resume</a></li>
+                        <li><a href="browse-employer.html">Browse Employer</a></li>
+                        <li><a href="browse-employer-grid.html">Browse Employer Grid</a></li>
+                        <li><a href="create-job.html">Create Job</a></li>
+                        <li><a href="resume-detail.html">Resume Detail</a></li>
+                        <li><a href="employer-detail.html">Employer Detail</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Candidate</a>
+                    <ul class="dropdown-menu animated fadeOutUp">
+                        <li><a href="browse-job.html">Browse Jobs</a></li>
+                        <li><a href="browse-job-with-map.html">Browse Jobs With Map</a></li>
+                        <li><a href="browse-grid-job-with-map.html">Browse Grid Jobs on Map</a></li>
+                        <li><a href="browse-candidate.html">Browse candidate</a></li>
+                        <li><a href="browse-candidate-grid.html">Browse candidate Grid</a></li>
+                        <li><a href="browse-candidate-with-map.html">Search candidate With Map</a></li>
+                        <li><a href="manage-job.html">Manage Jobs</a></li>
+                        <li><a href="browse-category.html">Browse Categories</a></li>
+                        <li><a href="create-resume.html">Create Resume</a></li>
+
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Extra</a>
+                    <ul class="dropdown-menu animated fadeOutUp">
+                        <li><a href="candidate.html">Candidate</a></li>
+                        <li><a href="profile-settings.html">Profile Settings</a></li>
+                        <li><a href="employer.html">Employer</a></li>
+                        <li><a href="featured-job.html">Featured Job</a></li>
+                        <li><a href="checkout.html">Checkout</a></li>
+                        <li><a href="job-view-cart.html">Job View Cart</a></li>
+                        <li><a href="job-detail-2.html">Job Detail 2</a></li>
+                        <li><a href="job-layout-one.html">Job Layout One</a></li>
+                        <li><a href="job-layout-two.html">Job Layout Two</a></li>
+                        <li><a href="job-layout-three.html">Job Layout Three</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Elements</a>
+                    <ul class="dropdown-menu animated fadeOutUp">
+                        <li><a href="icons.html">Icons</a></li>
+                        <li><a href="404.html">404</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="job-detail.html">Job Detail</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="blog-detail.html">Blog Detail</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="component.html">Component</a></li>
+                        <li><a href="typography.html">Typography</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li class="br-right"><a href="javascript:void(0)"  data-toggle="modal" data-target="#signin"><i class="login-icon ti-user"></i>Login</a></li>
+                <li class="sign-up"><a class="btn-signup red-btn" href="signup.html"><span class="ti-briefcase"></span>Sign Up</a></li>
+            </ul>
+
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+</nav>
+<!-- ======================= End Navigation ===================== -->
+
+<!-- ================ Job Detail Basic Information ======================= -->
+<section class="detail-section" style="background:url(assets/img/slider-2.jpg);" data-overlay="7">
+    <div class="overlay"></div>
+    <div class="profile-cover-content">
+        <div class="container">
+            <div class="cover-buttons">
+                <ul>
+                    <li><div class="buttons medium button-plain "><i class="fa fa-phone"></i>+91 528 578 5458</div></li>
+                    <li><div class="buttons medium button-plain "><i class="fa fa-map-marker"></i>#2852, SCO 20 Chandigarh</div></li>
+                    <li><a href="#add-review" class="buttons theme-btn"><i class="fa fa-paper-plane"></i><span class="hidden-xs">Apply Now</span></a></li>
+                    <li><a href="#" data-job-id="74" data-nonce="01a769d424" class="buttons btn-outlined"><i class="fa fa-heart-o"></i><span class="hidden-xs">Bookmark</span> </a></li>
+                </ul>
+            </div>
+            <div class="job-owner hidden-xs hidden-sm">
+                <div class="job-owner-avater">
+                    <img src="assets/img/c-2.png" class="img-responsive img-circle" alt="" />
+                </div>
+                <div class="job-owner-detail">
+                    <h4>Web Designing</h4>
+                    <span class="theme-cl">Google PVT</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ================ End Job Detail Basic Information ======================= -->
+
+<!-- ================ Start Job Overview ======================= -->
+<section class="gray">
+    <div class="container">
+
+        <!-- row -->
+        <div class="row">
+
+            <div class="col-md-8 col-sm-12">
+
+                <div class="detail-wrapper">
+                    <div class="detail-wrapper-body">
+                        <div class="job-title-bar">
+                            <h3>Web Design <span class="mrg-l-5 job-tag bg-success-light">Full Time</span></h3>
+                            <div>
+                                <p class="mrg-bot-0">
+                                    <i class="ti-location-pin mrg-r-5"></i>
+                                    2726 Shinn Street, New York
+                                </p>
+
+                                <p><strong>Roles</strong> : UX/UI Designer, Web Designer, Graphic Designer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="detail-wrapper">
+                    <div class="detail-wrapper-header">
+                        <h4>Overview</h4>
+                    </div>
+                    <div class="detail-wrapper-body">
+                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.</p>
+                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
+                    </div>
+                </div>
+
+                <div class="detail-wrapper">
+                    <div class="detail-wrapper-header">
+                        <h4>Responsibilities</h4>
+                    </div>
+                    <div class="detail-wrapper-body">
+                        <ul class="detail-list">
+                            <li>Execute all visual design stages from concept to final hand-off to engineering</li>
+                            <li>Conceptualize original website design ideas that bring simplicity and user friendliness to complex roadblocks</li>
+                            <li>Create wireframes, storyboards, user flows, process flows and site maps to communicate interaction and design ideas</li>
+                            <li>Present and defend designs and key deliverables to peers and executive level stakeholders</li>
+                            <li>Establish and promote design guidelines, best practices and standards</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="detail-wrapper">
+                    <div class="detail-wrapper-header">
+                        <h4>Requirements</h4>
+                    </div>
+                    <div class="detail-wrapper-body">
+                        <ul class="detail-list">
+                            <li>Proven work experienceas a web designer</li>
+                            <li>Demonstrable graphic design skills with a strong portfolio</li>
+                            <li>Proficiency in HTML, CSS and JavaScript for rapid prototyping</li>
+                            <li>Experience working in an Agile/Scrum development process</li>
+                            <li>Excellent visual design skills with sensitivity to user-system interaction</li>
+                            <li>Ability to solve problems creatively and effectively</li>
+                            <li>Up-to-date with the latest Web trends, techniques and technologies</li>
+                            <li>BS/MS in Human-Computer Interaction, Interaction Design or a Visual Arts subject</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-md-4 col-sm-12">
+                <div class="sidebar">
+
+                    <!-- Start: Opening hour -->
+                    <div class="widget-boxed lg">
+                        <div class="widget-boxed-body">
+                            <a href="#" class="btn btn-m theme-btn full-width mrg-bot-10"><i class="fa fa-paper-plane"></i>Apply For Job</a>
+                            <a href="#" class="btn btn-m light-gray-btn full-width"><i class="fa fa-linkedin"></i>Apply with Linkedin</a>
+                        </div>
+                    </div>
+                    <!-- End: Opening hour -->
+
+                    <!-- Start: Job Overview -->
+                    <div class="widget-boxed">
+                        <div class="widget-boxed-header">
+                            <h4><i class="ti-location-pin padd-r-10"></i>Location</h4>
+                        </div>
+                        <div class="widget-boxed-body">
+                            <div class="side-list no-border">
+                                <ul>
+                                    <li><i class="ti-credit-card padd-r-10"></i>Package: 20K To 50K/Month</li>
+                                    <li><i class="ti-world padd-r-10"></i>https://www.jobhill.com</li>
+                                    <li><i class="ti-mobile padd-r-10"></i>91 234 567 8765</li>
+                                    <li><i class="ti-email padd-r-10"></i>suppoer@listinghub.com</li>
+                                    <li><i class="ti-pencil-alt padd-r-10"></i>Bachelor Degree</li>
+                                    <li><i class="ti-shield padd-r-10"></i>3 Year Exp.</li>
+                                </ul>
+                                <h5>Share Job</h5>
+                                <ul class="side-list-inline no-border social-side">
+                                    <li><a href="#"><i class="fa fa-facebook theme-cl"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-google-plus theme-cl"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter theme-cl"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-linkedin theme-cl"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-pinterest theme-cl"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End: Job Overview -->
+
+                    <!-- Start: Opening hour -->
+                    <div class="widget-boxed">
+                        <div class="widget-boxed-header">
+                            <h4><i class="ti-time padd-r-10"></i>Opening Hours</h4>
+                        </div>
+                        <div class="widget-boxed-body">
+                            <div class="side-list">
+                                <ul>
+                                    <li>Monday <span>9 AM - 5 PM</span></li>
+                                    <li>Tuesday <span>9 AM - 5 PM</span></li>
+                                    <li>Wednesday <span>9 AM - 5 PM</span></li>
+                                    <li>Thursday <span>9 AM - 5 PM</span></li>
+                                    <li>Friday <span>9 AM - 5 PM</span></li>
+                                    <li>Saturday <span>9 AM - 3 PM</span></li>
+                                    <li>Sunday <span>Closed</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End: Opening hour -->
+
+                </div>
+            </div>
+
+        </div>
+        <!-- End Row -->
+
+        <!-- row -->
+        <div class="row">
+            <div class="col-md-12">
+                <h4 class="mrg-bot-20">More Jobs</h4>
+            </div>
+        </div>
+        <!-- End Row -->
+
+        <!-- row -->
+        <div class="row">
+            <!-- Single Job -->
+            <div class="col-md-3 col-sm-6">
+                <div class="grid-job-widget">
+
+                    <span class="job-type full-type">Full Time</span>
+                    <div class="job-like">
+                        <label class="toggler toggler-danger">
+                            <input type="checkbox" checked>
+                            <i class="fa fa-heart"></i>
+                        </label>
+                    </div>
+
+                    <div class="u-content">
+                        <div class="avatar box-80">
+                            <a href="employer-detail.html">
+                                <img class="img-responsive" src="assets/img/c-1.png" alt="">
+                            </a>
+                        </div>
+                        <h5><a href="employer-detail.html">Product Redesign</a></h5>
+                        <p class="text-muted">2708 Scenic Way,  IL 62373</p>
+                    </div>
+
+                    <div class="job-type-grid">
+                        <a href="job-detail.html" class="btn job-browse-btn btn-radius br-light">Browse Now</a>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Single Job -->
+            <div class="col-md-3 col-sm-6">
+                <div class="grid-job-widget">
+
+                    <span class="job-type full-type">Full Time</span>
+                    <div class="job-like">
+                        <label class="toggler toggler-danger">
+                            <input type="checkbox">
+                            <i class="fa fa-heart"></i>
+                        </label>
+                    </div>
+
+                    <div class="u-content">
+                        <div class="avatar box-80">
+                            <a href="employer-detail.html">
+                                <img class="img-responsive" src="assets/img/c-2.png" alt="">
+                            </a>
+                        </div>
+                        <h5><a href="employer-detail.html">New Product Mockup</a></h5>
+                        <p class="text-muted">2708 Scenic Way,  IL 62373</p>
+                    </div>
+
+                    <div class="job-type-grid">
+                        <a href="job-detail.html" class="btn job-browse-btn btn-radius br-light">Browse Now</a>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Single Job -->
+            <div class="col-md-3 col-sm-6">
+                <div class="grid-job-widget">
+
+                    <span class="job-type part-type">Full Time</span>
+                    <div class="job-like">
+                        <label class="toggler toggler-danger">
+                            <input type="checkbox" checked>
+                            <i class="fa fa-heart"></i>
+                        </label>
+                    </div>
+
+                    <div class="u-content">
+                        <div class="avatar box-80">
+                            <a href="employer-detail.html">
+                                <img class="img-responsive" src="assets/img/c-3.png" alt="">
+                            </a>
+                        </div>
+                        <h5><a href="employer-detail.html">Custom Php Developer</a></h5>
+                        <p class="text-muted">3765 C Street, Worcester</p>
+                    </div>
+
+                    <div class="job-type-grid">
+                        <a href="job-detail.html" class="btn job-browse-btn btn-radius br-light">Browse Now</a>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Single Job -->
+            <div class="col-md-3 col-sm-6">
+                <div class="grid-job-widget">
+
+                    <span class="job-type part-type">Part Time</span>
+                    <div class="job-like">
+                        <label class="toggler toggler-danger">
+                            <input type="checkbox">
+                            <i class="fa fa-heart"></i>
+                        </label>
+                    </div>
+
+                    <div class="u-content">
+                        <div class="avatar box-80">
+                            <a href="employer-detail.html">
+                                <img class="img-responsive" src="assets/img/c-4.png" alt="">
+                            </a>
+                        </div>
+                        <h5><a href="employer-detail.html">Wordpress Developer</a></h5>
+                        <p class="text-muted">2719 Duff Avenue, Winooski</p>
+                    </div>
+
+                    <div class="job-type-grid">
+                        <a href="job-detail.html" class="btn job-browse-btn btn-radius br-light">Browse Now</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- End Row -->
+
+    </div>
+</section>
+
+<!-- ====================== End Job Overview ================ -->
+
+<!-- ================= footer start ========================= -->
+<footer class="footer">
+    <div class="container">
+
+        <!-- Row Start -->
+        <div class="row">
+
+            <div class="col-md-8 col-sm-8">
+                <div class="row">
+                    <div class="col-md-4 col-sm-4">
+                        <h4>Featured Job</h4>
+                        <ul>
+                            <li><a href="#">Browse Jobs</a></li>
+                            <li><a href="#">Premium MBA Jobs</a></li>
+                            <li><a href="#">Access Database</a></li>
+                            <li><a href="#">Manage Responses</a></li>
+                            <li><a href="#">Report a Problem</a></li>
+                            <li><a href="#">Mobile Site</a></li>
+                            <li><a href="#">Jobs by Skill</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 col-sm-4">
+                        <h4>Featured Job</h4>
+                        <ul>
+                            <li><a href="#">Browse Jobs</a></li>
+                            <li><a href="#">Premium MBA Jobs</a></li>
+                            <li><a href="#">Access Database</a></li>
+                            <li><a href="#">Manage Responses</a></li>
+                            <li><a href="#">Report a Problem</a></li>
+                            <li><a href="#">Mobile Site</a></li>
+                            <li><a href="#">Jobs by Skill</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 col-sm-4">
+                        <h4>Featured Job</h4>
+                        <ul>
+                            <li><a href="#">Browse Jobs</a></li>
+                            <li><a href="#">Premium MBA Jobs</a></li>
+                            <li><a href="#">Access Database</a></li>
+                            <li><a href="#">Manage Responses</a></li>
+                            <li><a href="#">Report a Problem</a></li>
+                            <li><a href="#">Mobile Site</a></li>
+                            <li><a href="#">Jobs by Skill</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-4">
+                <h4>Featured Job</h4>
+                <p>At Vero Eos Et Accusamus Et Iusto Odio Dignissimos Ducimus Qui Blanditiis.At Vero Eos.</p>
+
+                <!-- Social Box -->
+                <div class="f-social-box">
+                    <ul>
+                        <li><a href="#"><i class="fa fa-facebook facebook-cl"></i></a></li>
+                        <li><a href="#"><i class="fa fa-google google-plus-cl"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter twitter-cl"></i></a></li>
+                        <li><a href="#"><i class="fa fa-pinterest pinterest-cl"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram instagram-cl"></i></a></li>
+                    </ul>
+                </div>
+
+                <!-- App Links -->
+                <div class="f-app-box">
+                    <ul>
+                        <li><a href="#"><i class="fa fa-apple"></i>App Store</a></li>
+                        <li><a href="#"><i class="fa fa-android"></i>Play Store</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Row Start -->
+        <div class="row">
+            <div class="col-md-12">
+                <div class="copyright text-center">
+                    <p>&copy; Copyright 2018 Jobvivo | Powerd By <a href="http://themezhub.com/" title="Themez Hub">Themez Hub</a></p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</footer>
+
+<!-- Sign Up Window Code -->
+<div class="modal fade" id="signin" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content" id="myModalLabel1">
+            <div class="modal-body">
+                <div class="text-center"><img src="assets/img/logo.png" class="img-responsive" alt=""></div>
+
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs nav-advance theme-bg" role="tablist">
+                    <li class="nav-item active">
+                        <a class="nav-link" data-toggle="tab" href="#employer" role="tab">
+                            <i class="ti-user"></i> Employer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#candidate" role="tab">
+                            <i class="ti-user"></i> Candidate</a>
+                    </li>
+                </ul>
+                <!-- Nav tabs -->
+
+                <!-- Tab panels -->
+                <div class="tab-content">
+
+                    <!-- Employer Panel 1-->
+                    <div class="tab-pane fade in show active" id="employer" role="tabpanel">
+                        <form>
+
+                            <div class="form-group">
+                                <label>User Name</label>
+                                <input type="text" class="form-control" placeholder="User Name">
+                            </div>
+
+                            <div class="form-group">
+                                <label>Password</label>
+                                <input type="password" class="form-control" placeholder="*********">
+                            </div>
+
+                            <div class="form-group">
+										<span class="custom-checkbox">
+											<input type="checkbox" id="44">
+											<label for="44"></label>Remember me
+										</span>
+                                <a href="#" title="Forget" class="fl-right">Forgot Password?</a>
+                            </div>
+                            <div class="form-group text-center">
+                                <button type="button" class="btn theme-btn full-width btn-m">LogIn </button>
+                            </div>
+
+                        </form>
+
+                        <div class="log-option"><span>OR</span></div>
+
+                        <div class="row mrg-bot-20">
+                            <div class="col-md-6">
+                                <a href="#" title="" class="fb-log-btn log-btn"><i class="fa fa-facebook"></i>Sign In With Facebook</a>
+                            </div>
+                            <div class="col-md-6">
+                                <a href="#" title="" class="gplus-log-btn log-btn"><i class="fa fa-google-plus"></i>Sign In With Google+</a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!--/.Panel 1-->
+
+                    <!-- Candidate Panel 2-->
+                    <div class="tab-pane fade" id="candidate" role="tabpanel">
+                        <form>
+
+                            <div class="form-group">
+                                <label>User Name</label>
+                                <input type="text" class="form-control" placeholder="User Name">
+                            </div>
+
+                            <div class="form-group">
+                                <label>Password</label>
+                                <input type="password" class="form-control" placeholder="*********">
+                            </div>
+
+                            <div class="form-group">
+										<span class="custom-checkbox">
+											<input type="checkbox" id="4">
+											<label for="4"></label>Remember me
+										</span>
+                                <a href="#" title="Forget" class="fl-right">Forgot Password?</a>
+                            </div>
+                            <div class="form-group text-center">
+                                <button type="button" class="btn theme-btn full-width btn-m">LogIn </button>
+                            </div>
+
+                        </form>
+
+                        <div class="log-option"><span>OR</span></div>
+
+                        <div class="row mrg-bot-20">
+                            <div class="col-md-6">
+                                <a href="#" title="" class="fb-log-btn log-btn"><i class="fa fa-facebook"></i>Sign In With Facebook</a>
+                            </div>
+                            <div class="col-md-6">
+                                <a href="#" title="" class="gplus-log-btn log-btn"><i class="fa fa-google-plus"></i>Sign In With Google+</a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!--/.Panel 2-->
+
+                </div>
+                <!-- Tab panels -->
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Sign Up Window -->
+
+<!-- Color Switcher -->
+<div class="style-switcher">
+    <h2 class="css-trigger"><a href="#"><i class="ti-settings"></i></a></h2>
+    <div>
+        <ul id="themecolors" class="m-t-20">
+            <li><a href="javascript:void(0)" data-skin="red-skin" class="red-theme">1</a></li>
+            <li><a href="javascript:void(0)" data-skin="green-skin" class="green-theme">2</a></li>
+            <li><a href="javascript:void(0)" data-skin="blue-skin" class="blue-theme">3</a></li>
+            <li><a href="javascript:void(0)" data-skin="yellow-skin" class="yellow-theme">4</a></li>
+            <li><a href="javascript:void(0)" data-skin="purple-skin" class="purple-theme">5</a></li>
+            <li><a href="javascript:void(0)" data-skin="cyan-skin" class="cyan-theme">6</a></li>
+        </ul>
+    </div>
+</div>
+
+<!-- =================== START JAVASCRIPT ================== -->
+<!-- Jquery js-->
+<script src="assets/js/jquery.min.js"></script>
+
+<!-- Bootstrap js-->
+<script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+<!-- Bootsnav js-->
+<script src="assets/plugins/bootstrap/js/bootsnav.js"></script>
+<script src="assets/js/viewportchecker.js"></script>
+
+<!-- Slick Slider js-->
+<script src="assets/plugins/slick-slider/slick.js"></script>
+
+<!-- wysihtml5 editor js -->
+<script src="assets/plugins/bootstrap/js/bootstrap-wysihtml5.js"></script>
+
+<!-- Aos Js -->
+<script src="assets/plugins/aos-master/aos.js"></script>
+
+<!-- Nice Select -->
+<script src="assets/plugins/nice-select/js/jquery.nice-select.min.js"></script>
+
+<!-- Custom Js -->
+<script src="assets/js/custom.js"></script>
+<script src="assets/js/jQuery.style.switcher.js"></script>
+
+<script>
+    AOS.init();
+</script>
+</body>
+</html>
+
+
+
+{#{% endblock %}#}

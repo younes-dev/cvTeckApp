@@ -1,0 +1,14 @@
+{% extends 'base_admin.html.twig' %}
+
+{% block title %}New User{% endblock %}
+
+{% block body %}
+    <div class="container">
+        <h1>Ajouter un Nouveau CV</h1>
+
+        {{ include('resume/_form.html.twig') }}
+
+        <a href="{{ path('resume_index') }}">back to list</a>
+    </div>
+
+{% endblock %}

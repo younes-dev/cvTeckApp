@@ -1,0 +1,66 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello HomeController!{% endblock %}
+
+{% block body %}
+
+
+
+		<!-- ======================= Start Navigation ===================== -->
+		{% include "home/partials/_navigation.html.twig" %}
+		<!-- ======================= End Navigation ===================== -->
+
+		<!-- ======================= Start Banner ===================== -->
+		{% include "home/partials/_banner.html.twig" %}
+		<!-- ======================= End Banner ===================== -->
+
+		<!-- ================= Category start ========================= -->
+		{% include "home/partials/_category.html.twig" %}
+		<!-- ================= End start ========================= -->
+
+		<!-- ================= Employer Area ========================= -->
+		{% include "home/partials/_employer.html.twig" %}
+		<!-- ================= Employer Area ========================= -->
+
+		<!-- ================= Job start ========================= -->
+		{% include "home/partials/_job-start.html.twig" %}
+
+		<!-- ====================== How It Work ================= -->
+		{% include "home/partials/_how-it-work.html.twig" %}
+
+
+		<!-- ========================= Testimonial Start ====================== -->
+		{% include "home/partials/_testimonial.html.twig" %}
+		<!-- =================== End testimonial ==================== -->
+
+		<!-- =================== Newsletter ==================== -->
+		{% include "home/partials/_newsletter.html.twig" %}
+		<!-- =================== End Newsletter ==================== -->
+
+		<!-- ================= footer start ========================= -->
+		{% include "home/partials/_footer.html.twig" %}
+		<!-- ================= End start ========================= -->
+
+		<!-- Sign Up Window Code -->
+		{% include "home/partials/_sign-up-window.html.twig" %}
+		<!-- End Sign Up Window -->
+
+		<!-- Color Switcher -->
+		<div class="style-switcher">
+			<h2 class="css-trigger"><a href="#"><i class="ti-settings"></i></a></h2>
+			<div>
+				<ul id="themecolors" class="m-t-20">
+					<li><a href="javascript:void(0)" data-skin="red-skin" class="red-theme">1</a></li>
+					<li><a href="javascript:void(0)" data-skin="green-skin" class="green-theme">2</a></li>
+					<li><a href="javascript:void(0)" data-skin="blue-skin" class="blue-theme">3</a></li>
+					<li><a href="javascript:void(0)" data-skin="yellow-skin" class="yellow-theme">4</a></li>
+					<li><a href="javascript:void(0)" data-skin="purple-skin" class="purple-theme">5</a></li>
+					<li><a href="javascript:void(0)" data-skin="cyan-skin" class="cyan-theme">6</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<!-- =================== START JAVASCRIPT ================== -->
+		{% include "home/partials/_java-script.html.twig" %}
+
+{% endblock %}

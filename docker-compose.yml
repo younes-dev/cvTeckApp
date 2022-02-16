@@ -1,0 +1,76 @@
+###############################################################################
+#                          Generated on phpdocker.io                          #
+###############################################################################
+version: "3.1"
+services:
+
+  ##########################################
+  #              mariadb Image             #
+  ##########################################
+
+  mariadb:
+    image: mariadb:10.4
+    container_name: cvTeckApp-mariadb
+    working_dir: /application
+    volumes:
+      - .:/application
+      - my-data:/var/lib/mysql:rw
+      # this will run all .sh, .sql and .sql.gz files found
+      - ./Data:/docker-entrypoint-initdb.d/:ro
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=WeCreateApp
+      - MYSQL_USER=user
+      - MYSQL_PASSWORD=user
+    ports:
+      - "3307:3306"
+  #docker exec -it cvTeckApp-mariadb bash : mysql -uroot -proot
+
+  ##########################################
+  #             webserver Image            #
+  ##########################################
+
+  webserver:
+    image: nginx:stable
+    container_name: cvTeckApp-webserver
+    working_dir: /application
+    volumes:
+      - .:/application
+      - ./phpdocker/nginx/nginx.conf:/etc/nginx/conf.d/default.conf
+      - /application/vendor
+      - /application/var
+    ports:
+      - "8080:80"
+#docker exec -it cvTeckApp-webserver bash
+
+
+
+#  webserver:
+#    image: nginx:stable
+#    container_name: cvTeckApp-webserver
+#    working_dir: /application
+#    volumes:
+#      - .:/application
+#      - ./phpdocker/nginx/nginx.conf:/etc/nginx/conf.d/default.conf
+#    ports:
+#      - "0.0.0.0:80:80"
+
+  ##########################################
+  #               php-fpm Image            #
+  ##########################################
+  php-fpm:
+    build: phpdocker/php-fpm
+    container_name: cvTeckApp-php-fpm
+    working_dir: /application
+    volumes:
+      - .:/application
+      - ./phpdocker/php-fpm/php-ini-overrides.ini:/etc/php/7.4/fpm/conf.d/99-overrides.ini
+      - /application/vendor
+      - /application/var
+  # docker exec -it cvTeckApp-php-fpm bash
+
+
+#  docker exec cvTeckApp-mariadb mysqldump --user root --password=root cvTeckApp > Data/cvTeckApp.sql
+
+volumes:
+  my-data:

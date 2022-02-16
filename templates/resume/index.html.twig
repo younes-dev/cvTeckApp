@@ -1,0 +1,67 @@
+{% extends 'base_admin.html.twig' %}
+
+{% block title %}User index{% endblock %}
+
+{% block body %}
+{#    <style>#}
+{#        img{#}
+{#            width: 300px;#}
+{#            height: 300px;#}
+{#            display: block;#}
+{#            margin-left: auto;#}
+{#            margin-right: auto;#}
+{#        }#}
+{#    </style>#}
+    <h1>Liste Des CV</h1>
+
+    <div class="row">
+
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Email</th>
+{#                <th>Roles</th>#}
+{#                <th>Password</th>#}
+                <th>FirstName</th>
+                <th>LastName</th>
+{#                <th>CreatedAt</th>#}
+                <th>Adress</th>
+                <th>Phone</th>
+{#                <th>Description</th>#}
+                <th>Poste</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for user in users %}
+            <tr>
+                <td>{{ user.id }}</td>
+                <td>{{ user.email }}</td>
+{#                <td>{{ user.roles ? user.roles|json_encode : '' }}</td>#}
+{#                <td>{{ user.password }}</td>#}
+                <td>{{ user.firstName }}</td>
+                <td>{{ user.lastName }}</td>
+{#                <td>{{ user.createdAt ? user.createdAt|date('Y-m-d H:i:s') : '' }}</td>#}
+                <td>{{ user.adress }}</td>
+                <td>{{ user.phone }}</td>
+{#                <td>{{ user.description }}</td>#}
+                <td>{{ user.poste }}</td>
+                <td>
+                    <a href="{{ path('resume_show', {'id': user.id}) }}">show</a>
+                    <a href="{{ path('resume_edit', {'id': user.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="12">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('resume_new') }}">Create new</a>
+    </div>
+
+{% endblock %}
