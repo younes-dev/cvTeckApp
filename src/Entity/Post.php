@@ -67,7 +67,7 @@ class Post
     /**
      * @ORM\Column(type="integer")
      */
-    private $expÃerience;
+    private $experience;
 
     /**
      * @ORM\Column(type="string", length=255, nullable=true)
@@ -78,6 +78,11 @@ class Post
      * @ORM\Column(type="string", length=255, nullable=true)
      */
     private $salary;
+
+    /**
+     * @ORM\Column(type="string", length=255, nullable=true)
+     */
+    private $image;
 
     public function __construct()
     {
@@ -220,14 +225,14 @@ class Post
         return $this;
     }
 
-    public function getExpÃerience(): ?int
+    public function getExperience(): ?int
     {
-        return $this->expÃerience;
+        return $this->experience;
     }
 
-    public function setExpÃerience(int $expÃerience): self
+    public function setExperience(int $experience): self
     {
-        $this->expÃerience = $expÃerience;
+        $this->experience = $experience;
 
         return $this;
     }
@@ -252,6 +257,18 @@ class Post
     public function setSalary(?string $salary): self
     {
         $this->salary = $salary;
+
+        return $this;
+    }
+
+    public function getImage(): ?string
+    {
+        return $this->image;
+    }
+
+    public function setImage(?string $image): self
+    {
+        $this->image = $image;
 
         return $this;
     }

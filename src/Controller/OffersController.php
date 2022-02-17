@@ -26,10 +26,10 @@ class OffersController extends AbstractController
     /**
      * @Route("/offers/{id}", name="offers_show", methods={"GET"})
      */
-    public function show(PostRepository $postRepository): Response
+    public function show(Post $post): Response
     {
         return $this->render('offers/index.html.twig', [
-            'post' =>  $postRepository->find(),
+            'post' =>  $post,
 
         ]);
     }

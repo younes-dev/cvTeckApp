@@ -32,6 +32,6 @@ final class Version20220216005601 extends AbstractMigration
     public function down(Schema $schema): void
     {
         // this down() migration is auto-generated, please modify it to your needs
-        $this->addSql('ALTER TABLE post DROP task, DROP requirement, DROP location, DROP email, DROP degree, DROP exp�erience, DROP website, DROP salary');
+        $this->addSql('ALTER TABLE post DROP task, DROP requirement, DROP location, DROP email, DROP degree, DROP experience, DROP website, DROP salary');
     }
 }
